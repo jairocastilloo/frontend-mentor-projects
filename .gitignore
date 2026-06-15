@@ -141,3 +141,13 @@ dist
 vite.config.js.timestamp-*
 vite.config.ts.timestamp-*
 .vite/
+
+# ---- Monorepo: apply rules to all project subfolders ----
+**/node_modules/
+**/dist/
+**/.vite/
+**/.netlify/
+
+# OS
+.DS_Store
+Thumbs.db
