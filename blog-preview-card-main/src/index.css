@@ -1,0 +1,33 @@
+@import "tailwindcss";
+
+
+@theme {
+  /* Colors */
+  --color-yellow:   #F4D04E;
+  --color-gray-950: #111111;
+  --color-gray-500: #6B6B6B;
+  --color-white:    #FFFFFF;
+
+
+  /* Spacing */
+  --spacing-300: 24px;
+  --spacing-150: 12px;
+  --spacing-100: 8px;
+  --spacing-50:  4px;
+
+  --font-figtree: 'Figtree', sans-serif;
+}
+
+@font-face {
+  font-family: 'Figtree';
+  src: url('/src/assets/fonts/Figtree-VariableFont_wght.ttf') format('truetype');
+  font-weight: 100 900;
+  font-style: normal;
+  font-display: swap;
+}
+
+.figfont {
+  font-family: var(--font-figtree);
+  line-height: 150%;
+  letter-spacing: 0px;
+}
