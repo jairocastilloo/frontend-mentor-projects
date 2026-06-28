@@ -1,4 +1,4 @@
-import jessicaImg from './assets/images/avatar-jessica.jpeg'
+import jessicaImg from '../assets/images/avatar-jessica.jpeg'
 
 const SOCIAL_LINKS = [
     { label: 'Github', href: '#'},
@@ -20,12 +20,12 @@ function ProfileCard(){
                 
                 <p className="text-preset-2">"Front-end developer and avid reader."</p>
                 <div className="flex flex-col items-center justify-center gap-y-200 w-full">
-                    {SOCIAL_LINKS.map(({ label, href }) => {
+                    {SOCIAL_LINKS.map(({ label, href }) => (
                         <a key={label} href={href} className="mainButton">
                             {label}
                         </a>
 
-                    })}
+                    ))}
 
                     
                 </div>
